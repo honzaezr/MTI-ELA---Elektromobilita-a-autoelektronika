@@ -81,6 +81,8 @@ plot(Distance, Battery_Voltage);
 hold on
 plot(x_max, max_hodnota, 'ro', 'MarkerSize', 4, 'MarkerFaceColor', 'r') % červený bod
 text(x_max, max_hodnota + 10, sprintf(' Max = %.1f V', max_hodnota), 'Color', 'r') % popisek
+plot(Distance(end), Battery_Voltage(end),'ro', 'MarkerSize', 4, 'MarkerFaceColor', 'r')
+text(Distance(end) - 3.5, Battery_Voltage(end) + 15, sprintf(' Max = %.1f V', Battery_Voltage(end)), 'Color', 'r') % popisek
 title("Napětí Baterie");
 xlabel("Vzdálenost [km]");
 ylabel("Napětí [V]");
@@ -154,12 +156,12 @@ yline(0, "-r","LineWidth", 1.5,"DisplayName","Dělící čára")
 
 plot(x_max_1, max_hodnota_1, 'ro', 'MarkerSize', 4, 'MarkerFaceColor', 'r',"DisplayName","Maximální příkon") % červený bod
 text(x_max_1, max_hodnota_1 + 0, sprintf(' Max = %.1f kW', max_hodnota_1), 'Color', 'r') % popisek
-plot(x_min_1, min_hodnota_1, 'ro', 'MarkerSize', 4, 'MarkerFaceColor', 'r', "DisplayName","Maximální příkon rekuperace") % červený bod
+plot(x_min_1, min_hodnota_1, 'ro', 'MarkerSize', 4, 'MarkerFaceColor', 'r', "DisplayName","Max. příkon rekuperace") % červený bod
 text(x_min_1, min_hodnota_1 - 6, sprintf(' Max = %.1f kW', abs(min_hodnota_1)), 'Color', 'r') % popisek
 
 plot(x_max_2, max_hodnota_2, 'go', 'MarkerSize', 4, 'MarkerFaceColor', 'g',"DisplayName","Maximální výkon") % červený bod
 text(x_max_2, max_hodnota_2 + 7, sprintf(' Max = %.1f kW', max_hodnota_2), 'Color', 'r') % popisek
-plot(x_min_2, min_hodnota_2, 'go', 'MarkerSize', 4, 'MarkerFaceColor', 'g',"DisplayName","Maximální výkon rekuperace") % červený bod
+plot(x_min_2, min_hodnota_2, 'go', 'MarkerSize', 4, 'MarkerFaceColor', 'g',"DisplayName","Max. výkon rekuperace") % červený bod
 text(x_min_2, min_hodnota_2 - 10, sprintf(' Max = %.1f kW', abs(min_hodnota_2)), 'Color', 'r') % popisek
 
 title("Příkon/Výkon elektrického pohonu");
