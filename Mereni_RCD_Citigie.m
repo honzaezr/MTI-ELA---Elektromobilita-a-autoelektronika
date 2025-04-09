@@ -16,7 +16,7 @@ clc;
 % 25. sloupec - Elekrický výkon elektrického pohonu, výstup z měniče
 
 %% -------------------------- Přirazení hodnot ----------------------------
-data = readmatrix("7_1_rozdelena.csv");
+data = readmatrix("Data_7.csv");
 
 Speed = data(:,1);
 Distance = data(:,3) / 1000;
