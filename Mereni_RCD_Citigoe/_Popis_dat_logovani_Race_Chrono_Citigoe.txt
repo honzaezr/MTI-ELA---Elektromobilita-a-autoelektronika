@@ -1,0 +1,35 @@
+
+
+F4 0D speed_1-obd kmh				Rychlost vozu dle OBD
+10 5D brake_pos_1-obd				Pozice brzdového pedálu
+F4 49 accelerator_pos_1-obd			Pozice plynového pedálu
+F4 46 temperature_2-obd				Venkovní teplota
+			
+F4 42 battery_voltage_3-obd			Napětí na svorce 30 (12V)
+
+3E 94 temperature_3-obd				Teplota elektrického pohonu
+46 58 engine_power_4-obd			Mechanický výkon elektrického pohonu
+3E E9 engine_torque_4-obd			Kroutící moment elektrického pohonu [Nm]
+46 59 rpm_4-obd					Otáčky motoru, skutečná hodnota
+14 7E engine_power_3-obd			Příkon elektrického pohonu, skutečná hodnota
+46 56 engine_power_5-obd			Elekrický výkon elektrického pohonu, výstup z měniče
+
+	
+02 8C state_of_charge_2-obd			Stav nabití akumulátoru Brutto
+F4 5B state_of_charge_1-obd			Stav nabití akumulátoru Netto
+
+1E 3B battery_voltage_1-obd			Napětí vysokonapěťového akumulátoru
+1E 3D battery_current_1-obd                     Proud vysokonapěťového akumulátoru
+14 85 power_1-obd			        Výkon z/do vysokonapěťového akumulátoru, skutečná hodnota
+
+1E 33 voltage_1obd				Napětí článku s největším napětím
+1E 34 voltage_2obd				Napětí článku s nejmenším napětím
+
+1E 0F battery_temp_2-obd			Teplota nejstudenějšího článku vysokonapěťového akumulátoru
+1E 0E battery_temp_1-obd			Teplota nejteplejšího článku vysokonapěťového akumulátoru
+
+
+16 17 current_7-obd				Proud spotřebičů HV
+16 04 current_8-obd                             Proud skutečné hodnoty PTC topení
+46 5B current_5-obd				Proud z DC/DC měniče 12V
+14 8B power_6-obd				Příkon DC/DC měniče
